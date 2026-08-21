@@ -18,10 +18,10 @@ jobs:
           cache-disabled: true
       - name: Set Custom App ID, Namespace, and Name
         run: |
-          sed -i 's/applicationId.*/applicationId = \"com.custom.webwallpaper401884\"/g' app/build.gradle.kts || true
-          sed -i 's/applicationId .*/applicationId \"com.custom.webwallpaper401884\"/g' app/build.gradle || true
-          sed -i 's/namespace.*/namespace = \"com.custom.webwallpaper401884\"/g' app/build.gradle.kts || true
-          sed -i 's/namespace .*/namespace \"com.custom.webwallpaper401884\"/g' app/build.gradle || true
+          sed -i 's/applicationId.*/applicationId = \"com.custom.webwallpaper808720\"/g' app/build.gradle.kts || true
+          sed -i 's/applicationId .*/applicationId \"com.custom.webwallpaper808720\"/g' app/build.gradle || true
+          sed -i 's/namespace.*/namespace = \"com.custom.webwallpaper808720\"/g' app/build.gradle.kts || true
+          sed -i 's/namespace .*/namespace \"com.custom.webwallpaper808720\"/g' app/build.gradle || true
           sed -i 's/<string name="app_name">.*<\/string>/<string name="app_name">WALP<\/string>/g' app/src/main/res/values/strings.xml || true
       - name: Sanitize and Apply Custom Icon
         run: |
